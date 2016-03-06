@@ -46,9 +46,6 @@ namespace pipeline
                 virtual bool Process(SharedTray & i_tray);
         
         private:
-                /// Pointer to the next stage to execute
-                std::shared_ptr<Stage> m_next_stage;
-
                 /// Stage name resembling that of the pipeline json file
                 std::string m_stage_name;
     };
